@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "321273019331",
+    "firebase_url": "https://sabbah-nti.firebaseio.com",
+    "project_id": "sabbah-nti",
+    "storage_bucket": "sabbah-nti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321273019331:android:89f044d20626c4cc88db76",
+        "android_client_info": {
+          "package_name": "com.example.application1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321273019331-7kvb3s4mg7dj5hvgbk43f44k2kgrcohv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.application1",
+            "certificate_hash": "22e03ce34705f2f2a800a2d875a142dd458f3cf0"
+          }
+        },
+        {
+          "client_id": "321273019331-p6effk6bmvpi8nlro5cscanchjim4u3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqfAdr2qu5wBYti9-ej68eyjHTNG3rk-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321273019331-p6effk6bmvpi8nlro5cscanchjim4u3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
