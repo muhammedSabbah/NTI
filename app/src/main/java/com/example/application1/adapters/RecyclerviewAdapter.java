@@ -12,18 +12,18 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.application1.R;
-import com.example.application1.pojo.Student;
+import com.example.application1.pojo.GithubUserModel;
 
 import java.util.List;
 
 public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapter.StudentViewHolder>{
 
     private Context mContext;
-    private List<Student> students;
+    private List<GithubUserModel> githubUserModelList;
 
-    public RecyclerviewAdapter(Context _mContext, List<Student> _students){
-        this.mContext = _mContext;
-        this.students = _students;
+    public RecyclerviewAdapter(Context mContext, List<GithubUserModel> githubUserModelList) {
+        this.mContext = mContext;
+        this.githubUserModelList = githubUserModelList;
     }
 
     @Override
@@ -36,33 +36,33 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 
     @Override
     public void onBindViewHolder(StudentViewHolder holder, int position) {
-        final Student student = students.get(position);
-        holder.txtName.setText(student.getName());
-        holder.txtAge.setText(student.getAge());
+        final GithubUserModel githubUserModel = githubUserModelList.get(position);
+        holder.txtUserName.setText(githubUserModel.getUserName());
+        holder.txtUserUrl.setText(githubUserModel.getUserUrl());
 
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, student.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, githubUserModel.getUserName(), Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return students.size();
+        return githubUserModelList.size();
     }
 
     public class StudentViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView txtName;
-        private TextView txtAge;
+        private TextView txtUserName;
+        private TextView txtUserUrl;
         private ConstraintLayout constraintLayout;
 
         public StudentViewHolder(View itemView) {
             super(itemView);
-            txtName = itemView.findViewById(R.id.txt_name);
-            txtAge = itemView.findViewById(R.id.txt_age);
+            txtUserName = itemView.findViewById(R.id.txt_user_name);
+            txtUserUrl = itemView.findViewById(R.id.txt_user_url);
             constraintLayout = itemView.findViewById(R.id.layout_parent);
         }
     }
