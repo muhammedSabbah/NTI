@@ -6,10 +6,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
     android:padding="16dp"
-    tools:context=".fragments.SignUpFragment">
+    tools:context=".fragment.SignUp">
+
+    <ImageView
+        android:id="@+id/img_sign_up_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="46dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_signUp_username"
+        android:id="@+id/et_sign_up_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -22,13 +33,13 @@
         android:padding="10dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-
         app:layout_constraintLeft_toLeftOf="parent"
+
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/img_sign_up_user" />
 
     <EditText
-        android:id="@+id/et_signUp_mail"
+        android:id="@+id/et_sign_up_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -44,10 +55,10 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_signUp_username" />
+        app:layout_constraintTop_toBottomOf="@id/et_sign_up_username" />
 
     <EditText
-        android:id="@+id/et_signUp_pass"
+        android:id="@+id/et_sign_up_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -63,10 +74,10 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_signUp_mail" />
+        app:layout_constraintTop_toBottomOf="@id/et_sign_up_email" />
 
     <EditText
-        android:id="@+id/et_signUp_pass_again"
+        android:id="@+id/et_sign_up_confirm_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -74,7 +85,7 @@
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="16dp"
         android:drawableTint="@android:color/white"
-        android:hint="Password again"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@android:color/white"
@@ -82,18 +93,55 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_signUp_pass" />
+        app:layout_constraintTop_toBottomOf="@id/et_sign_up_password" />
 
+    <CheckBox
+        android:id="@+id/checkbox_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Accept policy"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_sign_up_confirm_password" />
 
     <Button
-        android:id="@+id/btn_signUp"
+        android:id="@+id/btn_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round"
+        android:enabled="false"
         android:text="Sign Up"
         android:textColor="@android:color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_signUp_pass_again" />
+        app:layout_constraintTop_toBottomOf="@id/checkbox_policy" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="64dp"
+        android:text="Already have an account?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
+
+    <TextView
+        android:id="@+id/tv_login_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:text="Login"
+        android:textColor="#88065B"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
 </androidx.constraintlayout.widget.ConstraintLayout>

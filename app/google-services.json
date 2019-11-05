@@ -42,6 +42,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321273019331:android:1bb455764cd8ce1888db76",
+        "android_client_info": {
+          "package_name": "com.example.moviesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321273019331-ioa630g1145etp6taph3ucj50mg1mdo1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moviesapp",
+            "certificate_hash": "22e03ce34705f2f2a800a2d875a142dd458f3cf0"
+          }
+        },
+        {
+          "client_id": "321273019331-p6effk6bmvpi8nlro5cscanchjim4u3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqfAdr2qu5wBYti9-ej68eyjHTNG3rk-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321273019331-p6effk6bmvpi8nlro5cscanchjim4u3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
