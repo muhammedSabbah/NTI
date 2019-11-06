@@ -17,8 +17,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.moviesapp.R;
+import com.example.moviesapp.pojo.SessionManager;
 import com.example.moviesapp.ui.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,7 +28,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Login extends Fragment {
+public class LoginFragment extends Fragment {
 
     private FirebaseAuth mAuth;
 
@@ -40,13 +42,21 @@ public class Login extends Fragment {
     private TextView tvInvalid;
     private TextView tvNavigate;
 
+    private SessionManager sessionManager;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // initialize the FirebaseAuth instance.
         mAuth = FirebaseAuth.getInstance();
+        sessionManager = new SessionManager(getContext());
+
+        progressDialogSettings();
+    }
+    private void progressDialogSettings() {
         progressDialog = new ProgressDialog(getContext());
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progressDialog.setCancelable(false);
+        progressDialog.setMessage("Authenticating... ");
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,13 +64,18 @@ public class Login extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         // Inflate the layout for this fragment
+        getLayoutComponents(view);
+        return view;
+    }
+
+    private void getLayoutComponents(View view) {
         btnLogin = view.findViewById(R.id.btn_login);
         etEmail = view.findViewById(R.id.et_mail);
         etPassword = view.findViewById(R.id.et_password);
         tvInvalid = view.findViewById(R.id.tv_invalid);
         tvNavigate = view.findViewById(R.id.tv_sign_up_navigate);
-        return view;
     }
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -73,6 +88,7 @@ public class Login extends Fragment {
                 {
                     tvInvalid.setVisibility(View.VISIBLE);
                 }else {
+                    progressDialog.show();
                     createAccount(email, password);
                 }
             }
@@ -86,7 +102,6 @@ public class Login extends Fragment {
     }
 
     private void createAccount(final String email, final String password) {
-        progressDialog.show();
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
@@ -94,11 +109,13 @@ public class Login extends Fragment {
                         if (task.isSuccessful()) {
                             progressDialog.dismiss();
                             //Save to Shared Preference
+                            sessionManager.createData(email, password);
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent = new Intent(getContext(), HomeActivity.class);
                             startActivity(intent);
                         } else {
+                            Toast.makeText(getContext(), "Wrong E-mail or Password", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
                         }
                     }
@@ -106,7 +123,7 @@ public class Login extends Fragment {
     }
 
     private void navigateSignUpFragment(){
-        SignUp signUpFragment = new SignUp();
+        SignUpFragment signUpFragment = new SignUpFragment();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fr_layout, signUpFragment);

@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 import java.util.HashMap;
 
-public class SharedPreferenceModel {
+public class SessionManager {
 
     private Context mContext;
     private SharedPreferences sharedPreferences;
@@ -13,11 +13,27 @@ public class SharedPreferenceModel {
 
     private static String sharedPreferencesName = "NAME";
     private static String KEY_LOGIN = "IS_LOGIN";
-    private static String KEY_EMAIL = "EMAIL";
+    public static String KEY_EMAIL = "EMAIL";
     private static String KEY_PASSWORD = "PASSWORD";
 
 
-    public SharedPreferenceModel(Context mContext){
+    public static String getKeyEmail() {
+        return KEY_EMAIL;
+    }
+
+    public static void setKeyEmail(String keyEmail) {
+        KEY_EMAIL = keyEmail;
+    }
+
+    public static String getKeyPassword() {
+        return KEY_PASSWORD;
+    }
+
+    public static void setKeyPassword(String keyPassword) {
+        KEY_PASSWORD = keyPassword;
+    }
+
+    public SessionManager(Context mContext){
         this.mContext = mContext;
         sharedPreferences = mContext.getSharedPreferences(sharedPreferencesName, 0);
         editor = sharedPreferences.edit();
@@ -32,7 +48,8 @@ public class SharedPreferenceModel {
         HashMap<String, String> userData = new HashMap<>();
         String email = sharedPreferences.getString(KEY_EMAIL, null);
         String password = sharedPreferences.getString(KEY_PASSWORD, null);
-        userData.put(email, password);
+        userData.put(KEY_EMAIL, email);
+        userData.put(KEY_PASSWORD, password);
         return userData;
     }
     public void clearData(){

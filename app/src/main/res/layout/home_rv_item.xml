@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_icon"
+        android:minWidth="120dp"
+        android:minHeight="150dp"
+        android:src="@drawable/ic_movie"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="MOVIE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginStart="64dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_movie_release"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="RELEASE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="70dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_movie_name"
+        />
+    <RatingBar
+        android:id="@+id/tv_movie_rate"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="100dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_movie_release"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,11 +6,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.example.moviesapp.R;
-import com.example.moviesapp.fragment.Login;
+import com.example.moviesapp.fragment.LoginFragment;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    private Login loginFragment;
+    private LoginFragment loginFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void attachFragments() {
-        loginFragment = new Login();
+        loginFragment = new LoginFragment();
 
         FragmentTransaction transaction =
                 getSupportFragmentManager().beginTransaction();
