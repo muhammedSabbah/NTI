@@ -8,6 +8,8 @@
 
     <color name="MovieBackground">#FCFCFC</color>
 
+    <color name="white">#FFFFFF</color>
+
     <color name="duskYellow">#FFC922</color>
     <color name="Orange">#FF9600</color>
 </resources>

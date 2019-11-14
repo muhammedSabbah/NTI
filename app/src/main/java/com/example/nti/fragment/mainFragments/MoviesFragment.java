@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,6 +43,11 @@ public class MoviesFragment extends Fragment {
     private Map<String, Object> moviesmap = new HashMap<>();
 
     private List<MovieModel> movieModelList = new ArrayList<>();
+
+    private ImageView imgRocket;
+    private TextView loading;
+    private Animation animation;
+
     public MoviesFragment() {
         // Required empty public constructor
     }
@@ -49,12 +58,17 @@ public class MoviesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_movies, container, false);
         recyclerView = view.findViewById(R.id.rv_movies);
+        imgRocket = view.findViewById(R.id.iv_rocket);
+        loading = view.findViewById(R.id.tv_load);
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        animation = AnimationUtils.loadAnimation(getContext(), R.anim.frombottom);
+        imgRocket.setAnimation(animation);
+        loading.setAnimation(animation);
         getMoviesFromFirebase();
     }
 

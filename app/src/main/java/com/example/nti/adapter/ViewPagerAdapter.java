@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.nti.fragment.settingsFragments.AccountSettingsFragment;
 import com.example.nti.fragment.settingsFragments.AppSettingsFragment;
-import com.example.nti.fragment.settingsFragments.PrivacySettingsFragment;
+import com.example.nti.fragment.settingsFragments.RatingSettingsFragment;
 
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -23,7 +23,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new AccountSettingsFragment();
             case 1:
-                return new PrivacySettingsFragment();
+                return new RatingSettingsFragment();
             case 2:
                 return new AppSettingsFragment();
         }
