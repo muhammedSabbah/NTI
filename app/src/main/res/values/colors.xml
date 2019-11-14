@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#233ED8</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#000000</color>
 
     <color name="hint">#88065B</color>
 
@@ -12,5 +12,7 @@
 
     <color name="duskYellow">#FFC922</color>
     <color name="Orange">#FF9600</color>
+
+    <color name="black">#000000</color>
 </resources>
 

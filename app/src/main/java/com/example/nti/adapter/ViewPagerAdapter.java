@@ -42,9 +42,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return "Account";
+                return "Favourites";
             case 1:
-                return "Privacy";
+                return "Rating";
             case 2:
                 return "Contacts";
         }
