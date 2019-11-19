@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/MovieBackground"
+    android:background="@color/white"
     android:orientation="horizontal">
 
     <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/item_icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/img_movie"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_centerVertical="true"
-        android:layout_margin="24dp"
+        android:layout_margin="8dp"
         android:background="@color/MovieBackground"
         android:minWidth="120dp"
         android:minHeight="150dp"
@@ -21,48 +21,20 @@
         android:src="@drawable/ic_movie"
         app:civ_border_color="#313131"
         app:civ_border_width="1dp"
-
-        app:civ_shadow="true"
-        app:civ_shadow_radius="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_movie_name"
+        android:id="@+id/tv_movie_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
-        android:text="MOVIE"
-        android:textAlignment="center"
-        android:textSize="25sp"
-
-        app:layout_constraintLeft_toRightOf="@id/item_icon"
+        android:padding="16dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img_movie"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_movie_release"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="RELEASE"
-        android:textAlignment="center"
-        android:textSize="25sp"
-
-        app:layout_constraintLeft_toRightOf="@id/item_icon"
-        app:layout_constraintTop_toBottomOf="@id/tv_movie_name" />
-
-    <RatingBar
-        android:id="@+id/tv_movie_rate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:numStars="5"
-        android:rating="1"
-
-        android:theme="@style/RatingBar"
-        app:layout_constraintLeft_toRightOf="@id/item_icon"
-        app:layout_constraintTop_toBottomOf="@id/tv_movie_release" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

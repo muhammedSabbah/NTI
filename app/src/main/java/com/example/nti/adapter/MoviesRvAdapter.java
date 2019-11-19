@@ -5,16 +5,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.bumptech.glide.Glide;
 import com.example.nti.R;
+import com.example.nti.fragment.registerFragments.SignUpFragment;
 import com.example.nti.pojo.MovieModel;
 
 import java.util.List;
@@ -22,6 +25,7 @@ import java.util.List;
 public class MoviesRvAdapter extends RecyclerView.Adapter<MoviesRvAdapter.MoviesViewHolder> {
     private Context mContext;
     private List<MovieModel> moviesList;
+
     public MoviesRvAdapter(Context context, List<MovieModel> moviesList) {
         mContext = context;
         this.moviesList = moviesList;
@@ -36,22 +40,26 @@ public class MoviesRvAdapter extends RecyclerView.Adapter<MoviesRvAdapter.Movies
     @Override
     public void onBindViewHolder(@NonNull MoviesRvAdapter.MoviesViewHolder holder, int position) {
         MovieModel model = moviesList.get(position);
-        holder.tvMovieName.setText(model.getMovieName());
-        holder.tvMovieRelease.setText(model.getMovieRelease());
+        holder.tvMovieTitle.setText(model.getTitle());
 
         // change here Glide -> fire base
-        Glide.with(mContext).load(model.getImageUrl()).into(holder.imgViewIcon);
-        //holder.imgViewIcon.setImageResource(model.getImageUrl());
-        //Rating value
+        Glide.with(mContext).load(model.getBackdropPath()).into(holder.imgMovie);
 
-
-        holder.ratingBar.setRating(model.getRate());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext,"Item is Clicked", Toast.LENGTH_SHORT).show();
+                navigateSignUpFragment();
             }
         });
+    }
+    private void navigateSignUpFragment(){
+        SignUpFragment signUpFragment = new SignUpFragment();
+        FragmentManager fragmentManager = ((FragmentActivity)mContext).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fr_layout, signUpFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     @Override
@@ -60,16 +68,12 @@ public class MoviesRvAdapter extends RecyclerView.Adapter<MoviesRvAdapter.Movies
     }
 
     public class MoviesViewHolder extends RecyclerView.ViewHolder {
-        TextView tvMovieName;
-        TextView tvMovieRelease;
-        ImageView imgViewIcon;
-        RatingBar ratingBar;
+        TextView tvMovieTitle;
+        ImageView imgMovie;
         public MoviesViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvMovieName = itemView.findViewById(R.id.tv_movie_name);
-            tvMovieRelease = itemView.findViewById(R.id.tv_movie_release);
-            imgViewIcon = itemView.findViewById(R.id.item_icon);
-            ratingBar = itemView.findViewById(R.id.tv_movie_rate);
+            tvMovieTitle = itemView.findViewById(R.id.tv_movie_title);
+            imgMovie = itemView.findViewById(R.id.img_movie);
         }
     }
 }
