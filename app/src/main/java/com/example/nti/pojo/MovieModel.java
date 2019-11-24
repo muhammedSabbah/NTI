@@ -1,6 +1,8 @@
 package com.example.nti.pojo;
 
-public class MovieModel {
+import java.io.Serializable;
+
+public class MovieModel implements Serializable {
     private boolean adult;
     private String backdropPath;
     private String originalLanguage;
@@ -30,6 +32,19 @@ public class MovieModel {
         this.hasVideo = hasVideo;
         this.voteAverage = voteAverage;
         this.voteCount = voteCount;
+    }
+
+    public String getAdultValue(){
+        if(isAdult()){
+            return "YES";
+        }
+        return "NO";
+    }
+    public String getVideoValue(){
+        if(isHasVideo()){
+            return "YES";
+        }
+        return "NO";
     }
 
     public boolean isAdult() {
