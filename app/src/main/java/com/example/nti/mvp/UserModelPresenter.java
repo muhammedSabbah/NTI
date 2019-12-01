@@ -15,33 +15,39 @@ import com.google.firebase.auth.FirebaseUser;
 public class UserModelPresenter {
 
     private Context mContext;
-    private SignUpUserView signUpUserViewn;
+    private SignUpUserView signUpUserView;
     private FirebaseAuth mAuth;
+    private boolean IS_CREATED;
 
-    public UserModelPresenter(Context mContext, SignUpUserView userView){
+    public UserModelPresenter(Context mContext, SignUpUserView userView) {
         mAuth = FirebaseAuth.getInstance();
         this.mContext = mContext;
-        this.signUpUserViewn = userView;
+        this.signUpUserView = userView;
+        IS_CREATED = true;
     }
 
-    public void createUser(UserModel userModel){
-        createUserWithAuthentication(userModel);
-        signUpUserViewn.onCreateUser();
+    public void createUser(UserModel userModel) {
+        if (createUserWithAuthentication(userModel)) {
+            signUpUserView.onCreateUser();
+        }
     }
 
-    private void createUserWithAuthentication(final UserModel userModel){
+    private boolean createUserWithAuthentication(final UserModel userModel) {
         mAuth.createUserWithEmailAndPassword(userModel.getEmail(), userModel.getPassword())
                 .addOnCompleteListener((Activity) mContext, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            //Save to Shared Preference
-                            //////
+                        if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
+                            IS_CREATED = true;
+                        } else {
+                            IS_CREATED = false;
                         }
                     }
                 });
+        return IS_CREATED;
     }
+
 
     public boolean isConfirmedPassword(String password1, String password2) {
         if (password1.equals(password2)) {

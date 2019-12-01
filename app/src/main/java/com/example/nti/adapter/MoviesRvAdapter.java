@@ -18,7 +18,6 @@ import com.example.nti.R;
 import com.example.nti.pojo.MovieModel;
 import com.example.nti.ui.MovieActivity;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class MoviesRvAdapter extends RecyclerView.Adapter<MoviesRvAdapter.MoviesViewHolder> {
@@ -42,7 +41,7 @@ public class MoviesRvAdapter extends RecyclerView.Adapter<MoviesRvAdapter.Movies
         final MovieModel model = moviesList.get(position);
         holder.tvMovieTitle.setText(model.getTitle());
 
-        // change here Glide -> fire base
+
         Glide.with(mContext).load(model.getBackdropPath()).into(holder.imgMovie);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
