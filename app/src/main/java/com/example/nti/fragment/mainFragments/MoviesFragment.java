@@ -10,7 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -21,36 +20,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.nti.R;
 import com.example.nti.adapter.MoviesRvAdapter;
+import com.example.nti.mvp.MovieModelPresenter;
+import com.example.nti.mvp.MovieView;
 import com.example.nti.pojo.MovieModel;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class MoviesFragment extends Fragment {
+public class MoviesFragment extends Fragment implements MovieView {
 
     private RecyclerView recyclerView;
     private MoviesRvAdapter adapter;
-
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-    private Map<String, Object> moviesmap = new HashMap<>();
-
-    private List<MovieModel> movieModelList = new ArrayList<>();
 
     private ImageView imgRocket;
     private TextView loading;
     private Animation animation;
 
-    public MoviesFragment() {
-        // Required empty public constructor
-    }
+    MovieModelPresenter movieModelPresenter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,14 +51,38 @@ public class MoviesFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        animationCore();
+
+        movieModelPresenter = new MovieModelPresenter(this);
+        movieModelPresenter.getMoviesFromFirebase();
+    }
+
+    private void animationCore() {
         animation = AnimationUtils.loadAnimation(getContext(), R.anim.frombottom);
         imgRocket.setAnimation(animation);
         loading.setAnimation(animation);
-        getMoviesFromFirebase();
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                imgRocket.setVisibility(View.GONE);
+                loading.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
     }
 
     private void setRecyclerView(List<MovieModel> movieModelList) {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        //recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), 0));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), layoutManager.getOrientation()));
         recyclerView.setLayoutManager(layoutManager);
@@ -81,39 +90,8 @@ public class MoviesFragment extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
-    private void getMoviesFromFirebase() {
-        db.collection("Movies")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            movieModelList = new ArrayList<>();
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                moviesmap = document.getData();
-                                if(getMovie(moviesmap) != null){
-                                    MovieModel movieModel = getMovie(moviesmap);
-                                    movieModelList.add(movieModel);
-                                }
-                            }
-                            setRecyclerView(movieModelList);
-                        } else {
-
-                        }
-                    }
-                });
-    }
-
-    private MovieModel getMovie(Map<String, Object> moviesmap){
-        try {
-            MovieModel movieModel = new MovieModel();
-            movieModel.setMovieName(moviesmap.get("movieName").toString());
-            movieModel.setMovieRelease(moviesmap.get("movieRelease").toString());
-            movieModel.setImageUrl(moviesmap.get("imageUrl").toString());
-            movieModel.setRate((long)moviesmap.get("rate"));
-            return movieModel;
-        }catch (Exception e){
-            return null;
-        }
+    @Override
+    public void onGetMovieModel(List<MovieModel> movieModelList) {
+        setRecyclerView(movieModelList);
     }
 }

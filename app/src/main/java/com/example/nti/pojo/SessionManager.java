@@ -15,31 +15,6 @@ public class SessionManager {
     private static String KEY_LOGIN = "IS_LOGIN";
     public static String KEY_EMAIL = "EMAIL";
     private static String KEY_PASSWORD = "PASSWORD";
-    private static String KEY_MOVIE_TYPE = "MOVIE_TYPE";
-
-    public static String getKeyMovieType() {
-        return KEY_MOVIE_TYPE;
-    }
-
-    public static void setKeyMovieType(String keyMovieType) {
-        KEY_MOVIE_TYPE = keyMovieType;
-    }
-
-    public static String getKeyEmail() {
-        return KEY_EMAIL;
-    }
-
-    public static void setKeyEmail(String keyEmail) {
-        KEY_EMAIL = keyEmail;
-    }
-
-    public static String getKeyPassword() {
-        return KEY_PASSWORD;
-    }
-
-    public static void setKeyPassword(String keyPassword) {
-        KEY_PASSWORD = keyPassword;
-    }
 
     public SessionManager(Context mContext){
         this.mContext = mContext;
@@ -50,7 +25,6 @@ public class SessionManager {
         editor.putBoolean(KEY_LOGIN, true);
         editor.putString(KEY_EMAIL, email);
         editor.putString(KEY_PASSWORD, password);
-        editor.putString(KEY_MOVIE_TYPE, "All");
         editor.commit();
     }
     public HashMap<String, String> getData(){

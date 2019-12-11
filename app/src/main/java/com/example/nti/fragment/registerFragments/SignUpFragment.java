@@ -14,25 +14,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.nti.R;
+import com.example.nti.mvp.SignUpUserView;
+import com.example.nti.mvp.UserModelPresenter;
 import com.example.nti.pojo.SessionManager;
+import com.example.nti.pojo.UserModel;
 import com.example.nti.ui.HomeActivity;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-public class SignUpFragment extends Fragment {
+public class SignUpFragment extends Fragment implements SignUpUserView {
 
-
-    private FirebaseAuth mAuth;
+    private EditText etUserName;
     private EditText etEmail;
     private EditText etPassword;
     private EditText etConfirmPassword;
@@ -42,26 +38,20 @@ public class SignUpFragment extends Fragment {
 
     private ProgressDialog progressDialog;
 
-    private String email;
-    private String password;
     private String confirmPassword;
+    private UserModel userModel;
 
     private SessionManager sessionManager;
+    private UserModelPresenter userModelPresenter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // initialize the FirebaseAuth instance.
-        mAuth = FirebaseAuth.getInstance();
         sessionManager = new SessionManager(getContext());
+        userModelPresenter = new UserModelPresenter(getContext(), this);
+        userModel = new UserModel();
         progressDialogSettings();
-    }
-
-    private void progressDialogSettings() {
-        progressDialog = new ProgressDialog(getContext());
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Authenticating... ");
     }
 
     @Override
@@ -74,6 +64,7 @@ public class SignUpFragment extends Fragment {
     }
 
     private void getLayoutComponents(View view) {
+        etUserName = view.findViewById(R.id.et_sign_up_username);
         etEmail = view.findViewById(R.id.et_sign_up_email);
         etPassword = view.findViewById(R.id.et_sign_up_password);
         etConfirmPassword = view.findViewById(R.id.et_sign_up_confirm_password);
@@ -82,25 +73,33 @@ public class SignUpFragment extends Fragment {
         checkBoxPolicy = view.findViewById(R.id.checkbox_policy);
     }
 
+    private void progressDialogSettings() {
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progressDialog.setCancelable(false);
+        progressDialog.setMessage("Authenticating... ");
+    }
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         checkBoxPolicy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 btnSignUp.setEnabled(true);
             }
         });
+
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                email = etEmail.getText().toString();
-                password = etPassword.getText().toString().trim();
+                setUserModelValue();
                 confirmPassword = etConfirmPassword.getText().toString().trim();
-                if(isConfirmedPassword(password, confirmPassword)){
+                if (userModelPresenter.isConfirmedPassword(userModel.getPassword(), confirmPassword)) {
                     progressDialog.show();
-                    createAccount(email, password);
-                } else{
+                    userModelPresenter.createUser(userModel);
+                } else {
                     Toast.makeText(getContext(), "Password not matched", Toast.LENGTH_SHORT).show();
                     etPassword.setTextColor(getResources().getColor(R.color.hint));
                     etConfirmPassword.setTextColor(getResources().getColor(R.color.hint));
@@ -115,26 +114,15 @@ public class SignUpFragment extends Fragment {
         });
 
     }
-    private void createAccount(final String email, final String password) {
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            progressDialog.dismiss();
-                            //Save to Shared Preference
-                            sessionManager.createData(email, password);
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Intent intent = new Intent(getContext(), HomeActivity.class);
-                            startActivity(intent);
-                        }else{
-                            progressDialog.dismiss();
-                        }
-                    }
-                });
+
+    private void setUserModelValue() {
+        userModel.setName(etUserName.getText().toString());
+        userModel.setEmail(etEmail.getText().toString());
+        userModel.setPassword(etPassword.getText().toString().trim());
+        userModel.setFavouriteMovie("All");
     }
 
-    private void navigateLoginFragment(){
+    private void navigateLoginFragment() {
         LoginFragment loginFragment = new LoginFragment();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -142,10 +130,12 @@ public class SignUpFragment extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
-    private boolean isConfirmedPassword(String password1, String password2){
-        if(password1.equals(password2)){
-            return true;
-        }
-        return false;
+
+    @Override
+    public void onCreateUser() {
+        progressDialog.dismiss();
+        sessionManager.createData(userModel.getEmail(), userModel.getPassword());
+        Intent intent = new Intent(getContext(), HomeActivity.class);
+        startActivity(intent);
     }
 }

@@ -14,5 +14,8 @@
     <color name="Orange">#FF9600</color>
 
     <color name="black">#000000</color>
+
+    <color name="gray">#6D6D6D</color>
+    <color name="white200">#E9E9E9</color>
 </resources>
 

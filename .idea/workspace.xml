@@ -30,6 +30,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/MoviesRvAdapter.java">
@@ -39,6 +40,14 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/RegistrationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
             </state>
           </provider>
         </entry>
@@ -49,6 +58,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -68,11 +79,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/AppSettingsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/SessionManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/MovieModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/MoviesRvAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/MoviesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/SignUpFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/startanim.xml" />
@@ -80,37 +87,52 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_animation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/frombottom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_movies.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/MoviesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/home_rv_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_privacy_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/rateimg.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/PrivacySettingsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/RatingSettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/HomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_account_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_app_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/MovieView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/MovieModelPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_movies.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/home_rv_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/MoviesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/RatingSettingsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/MovieModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_movie.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/MovieActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/UserView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/UserModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/SessionManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/SignUpUserView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/SignUpFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/MoviesRvAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/UserModelPresenter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="812" />
+    <option name="width" value="882" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -121,6 +143,7 @@
             <path>
               <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+<<<<<<< HEAD
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -132,18 +155,46 @@
             <path>
               <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+=======
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="nti" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
+<<<<<<< HEAD
+=======
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nti" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nti" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="NTI" type="1abcf292:AndroidViewProjectNode" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
@@ -152,10 +203,24 @@
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_29" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-14T12:32:45.376Z" />
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="YT9117FZ6A" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-01T09:40:22.808Z" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Court-Counter-master" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
     <property name="settings.editor.selected.configurable" value="memory.settings" />
   </component>
   <component name="RecentsManager">
@@ -260,12 +325,25 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25189108" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23457584" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -274,21 +352,27 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.35145888" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4993573" weight="0.96021223" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4993573" weight="0.18700266" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32891247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32891247" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32891247" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50064266" side_tool="true" weight="0.6392573" />
       <window_info anchor="bottom" id="Version Control" order="6" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4993573" visible="true" weight="0.27168575" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+=======
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4993573" weight="0.27320954" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.23457584" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.28277636" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Assistant" order="6" weight="0.29691517" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.18508998" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -319,223 +403,27 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.1.0/4ae37fad1fe95b42aa47a720908df37ba5d3c85e/core-1.1.0-sources.jar!/androidx/core/app/CoreComponentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/app/Instrumentation.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/privacy.svg" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic.svg" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-          <folding>
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/java/lang/Long.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/MovieModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/SignUpFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/AccountSettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/ProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/startanim.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/AnimationActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/mybutton.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/login_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/round.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_user_24.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_twitter.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_ic.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/clover.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bgapp.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_animation.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/app/Instrumentation.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/privacy.svg" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic.svg" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/SessionManager.java">
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/frombottom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_movies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_rv_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sign_up.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/MoviesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setRecyclerView#0;class#MoviesFragment#0" />
-            <element signature="method#getMoviesFromFirebase#0;class#MoviesFragment#0" />
-            <element signature="method#getMovie#0;class#MoviesFragment#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/RatingSettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1247#2065#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/rateimg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/RegistrationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1749">
-          <caret line="79" column="33" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,55 +437,18 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/SettingsFragment.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="android-designer2" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOptionsItemSelected#0;class#HomeActivity#0" />
-            <element signature="method#attachMovieFragment#0;class#HomeActivity#0" />
-            <element signature="method#navigateProfileFragment#0;class#HomeActivity#0" />
-            <element signature="method#navigateMoviesFragment#0;class#HomeActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/ViewPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/java/lang/Long.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/MovieModel.java">
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/AppSettingsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -608,21 +459,438 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_app_settings.xml">
+      <provider editor-type-id="android-designer2" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account_settings.xml">
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_rating_settings.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_rocket.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/rateimg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/settingsFragments/RatingSettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1887#2085#1" />
+            <element signature="e#2134#2332#1" />
+            <element signature="e#2381#2575#1" />
+            <element signature="e#2624#2821#1" />
+            <element signature="e#2825#3021#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/startanim.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/AnimationActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/mybutton.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/login_background.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_movies.xml">
+      <provider editor-type-id="android-designer2" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693">
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_rv_item.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/MovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/os/ThreadLocalWorkSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#2940#2941#0" expanded="true" />
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3632#3633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/app/SharedPreferencesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#navigateSignUpFragment#0;class#LoginFragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sign_up.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0/b9ebb04df2cb0cad4419af3c658690bc82aa5706/fragment-1.1.0-sources.jar!/androidx/fragment/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="2586" selection-start-line="2586" selection-end-line="2586" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/UserView.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/MoviesRvAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MoviesRvAdapter#0;class#MoviesRvAdapter#0" />
+            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0/b9ebb04df2cb0cad4419af3c658690bc82aa5706/fragment-1.1.0-sources.jar!/androidx/fragment/app/FragmentPagerAdapter.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/HomeActivity.java">
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sideMenuOperations#0;class#HomeActivity#0" />
+            <element signature="e#2138#3237#0" />
+            <element signature="method#onOptionsItemSelected#0;class#HomeActivity#0" />
+            <element signature="method#attachMovieFragment#0;class#HomeActivity#0" />
+            <element signature="method#navigateMoviesFragment#0;class#HomeActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/SettingsFragment.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/MovieModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2418#2419#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2544#2545#0" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2841#2842#0" expanded="true" />
+            <element signature="e#2881#2882#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3007#3008#0" expanded="true" />
+            <element signature="e#3053#3054#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3121#3122#0" expanded="true" />
+            <element signature="e#3171#3172#0" expanded="true" />
+            <element signature="e#3213#3214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/MovieActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getLayoutComponents#0;class#MovieActivity#0" />
+            <element signature="method#setLayoutComponentsValue#0;class#MovieActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/MoviesFragment.java">
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#animationCore#0;class#MoviesFragment#0" />
+            <element signature="method#setRecyclerView#0;class#MoviesFragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_mail.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_network.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/MovieModelPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMoviesFromFirebase#0;class#MovieModelPresenter#0" />
+            <element signature="method#getMovie#0;class#MovieModelPresenter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/adapter/ViewPagerAdapter.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/mainFragments/ProfileFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/UserModelPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <element signature="method#createUserWithAuthentication#0;class#UserModelPresenter#0" />
+            <element signature="e#1603#2073#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="method#isConfirmedPassword#0;class#UserModelPresenter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/fragment/registerFragments/SignUpFragment.java">
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getLayoutComponents#0;class#SignUpFragment#0" />
+            <element signature="method#progressDialogSettings#0;class#SignUpFragment#0" />
+            <element signature="method#setUserModelValue#0;class#SignUpFragment#0" />
+            <element signature="method#navigateLoginFragment#0;class#SignUpFragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/mvp/SignUpUserView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/pojo/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+=======
+        <state relative-caret-position="99">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="23" />
+          <folding>
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/nti/ui/RegistrationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="120">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+=======
+        <state relative-caret-position="33">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+>>>>>>> fb1a990e826d2d53e9cfe687dcf360bd69fa995f
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_rating_settings.xml">
       <provider selected="true" editor-type-id="text-editor">

@@ -30,11 +30,6 @@ public class RatingSettingsFragment extends Fragment {
 
     private Animation animation;
 
-    public RatingSettingsFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,7 +70,8 @@ public class RatingSettingsFragment extends Fragment {
                     imageView.setImageResource(R.drawable.ic_fourstar);
                     imageView.startAnimation(animation);
                     txtRate.setText("Good Job");
-                }else{
+                }
+                else{
                     imageView.setImageResource(R.drawable.ic_fivestar);
                     imageView.startAnimation(animation);
                     txtRate.setText("Awesome");
